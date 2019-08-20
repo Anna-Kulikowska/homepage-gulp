@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap&subset=latin-ext');
 
 
 html {
@@ -48,21 +49,25 @@ html {
   color: green;
   grid-area: header;
   text-align: center;
+  font-family: Kaushan Script;
 }
 
 .side_header {
   text-transform: uppercase;
   color: brown;
   text-align: center;
-&::before {
-  content: '-';
-  color: brown;
-&::after {
-  content: '-';
-  color: brown;
+  &::before {
+    content: '-';
+    color: brown;
+  }
+  &::after {
+    content: '-';
+    color: brown;
+  }
 }
 
 .article {
+  font-f  amily: Kaushan Script;
   grid-area: content;
   text-align: center
 }
@@ -122,11 +127,11 @@ html {
 @media (min-width: 451px) {
   .hamburger {
       display: none;
-}
-.navigation_list {
-  display: flexbox;
-  flex-direction: column;
-}
+  }
+  .navigation_list {
+    display: flexbox;
+    flex-direction: column;
+  }
 }
 
 .paragraph2 {
