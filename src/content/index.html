@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Druga strona tym razem z GRID-em</title>
     <meta name="description" content="Description" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <!-- Title -->
     <meta property="og:title" content="" />
@@ -18,23 +19,67 @@
 
     <link rel="manifest" href="manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+</head>
+<body>
+    <button class="hamburger">&#9776</button>
+        <nav class="navigation navigation_visible">
+                <ul class="navigation_list navigation_list--js">
+                    <li class="list_item">
+                        <a class="link" href="#">Dzień pierwszy</a> 
+                    </li>
+                    <li class="list_item">
+                       <a class="link" href="#">Dzień drugi</a> 
+                    </li>
+                    <li class="list_item">
+                        <a class="link" href="#">Dzień trzeci</a> 
+                    </li>
+                    <li class="list_item">
+                        <a class="link" href="#">Uwagi ogólne</a> 
+                    </li>
+                </ul>
+            </nav>
+    <main class="grid">
+        <header class="main_header">
+            <h1>Trzydniowy detoks sokowy</h1>
+        </header>
+        <article class="article">
+            <h2 class="side_header">Dzień pierwszy</h2>
+            <p class="paragraph">Śniadanie: marchew jabłka burak szpinak;<br>
+                II śniadanie: jabłko, ogórek, cytryna, jarmuż;<br>
+                Obiad: marchew, rzodkiewka, pomidory;<br>
+                Podwieczorek: ananas, szpinak, jabłko, imbir;<br>
+                Kolacja: jabłko pietruszka ogórek;
+            </p>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+        </article>
+        <article class="article2">
+            <h2 class="side_header">Dzień drugi</h2>
+            <p class="paragraph">Śniadanie: jabłko pietruszka marchew;<br>
+                II śniadanie: burak jabłko szpinak imbir;<br>
+                Obiad: marchew rzodkiewka ogórek;<br>
+                Podwieczorek: wiśnia imbir jabłko ;<br>
+                Kolacja: burak ananas jabłka marchew;
+            </p>
+        </article>
+        <article class="article3">
+            <h2 class="side_header">Dzień trzeci</h2>
+            <p class="paragraph">Śniadanie: seler naciowy jarmuż ogórek natka imbir jabłko;<br>
+                II śniadanie: marchew jabłko cytryna kurkuma;<br>
+                Obiad: burak marchew jabłka;<br>
+                Podwieczorek: ananas jabłka cytryna mięta ;<br>
+                Kolacja: szpinak ogórek jabłko;
+        </article>
+        <footer class="footer">
+            <h2 class="side_header"> Ogólne uwagi</h2>
+            <p class="paragraph">
+                Soki należy pić powoli, najlepiej przez słomkę, trzymając chwilę płyn w buzi. Przez cały dzień można popijać wodę z cytryną. Należy unikać wysiłku fizycznego i chodzić wcześnie spać.
+            </p>
+            <img src="assets/img/smoothies.jpg" alt="zdjęcie soków" class="image"> <img src="assets/img/beverage.jpg" alt="woda z cytryną" class="image">
 
+        </footer>
+    </main>
+    <p class="paragraph2">Przejdź do strony z <a href="formularz.html">formularzem</a> jeśli chcesz otrzymać skomponowany specjalnie dla Ciebie detoks sokowy</p>
     <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
